@@ -26,10 +26,10 @@ export default props => {
                 />
             </View>
 
-            <Pressable style={style.ButtonLocation} onPress={() => props.navigation.navigate('SucessCity')}>
+            <Pressable style={style.ButtonLocation} onPress={() => props.navigation.navigate('PointParis')}>
                 <Text style={style.ButtonText}>Location Name</Text>
             </Pressable>
-            <Pressable style={style.ButtonLocation} onPress={() => props.navigation.navigate('SucessCity')}>
+            <Pressable style={style.ButtonLocation} onPress={() => props.navigation.navigate('PointParis')}>
                 <Text style={style.ButtonText}>Location Info</Text>
             </Pressable>
             <Pressable style={style.ButtonAdd} onPress={() => props.navigation.navigate('PointParis')}>

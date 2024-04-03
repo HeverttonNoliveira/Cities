@@ -4,8 +4,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import AddCity from "./components/AddCity";
 import City from "./components/City";
-import NotCity from "../components/addLocation/NotCityParis";
 import Paris from "./components/locationCity/Paris";
+import NotCityParid from "./components/addLocation/addCityParis";
+import NotCityTokyo from "./components/addLocation/addCityTokyo";
+import Tokyo from "./components/locationCity/Tokyo";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,11 +20,12 @@ export default props =>{
                     <Stack.Screen name="City" component={City} options={{headerTitleAlign:"center"}}/>
 
                     {/* location City */}
-                    <Stack.Screen name="CityParis" component={NotCity} options={{headerTitleAlign:"center", title:"Paris"}}/>
-                    <Stack.Screen name="CityTokyo" component={NotCity} options={{headerTitleAlign:"center", title:"Tokyo"}}/>
+                    <Stack.Screen name="CityParis" component={NotCityParid} options={{headerTitleAlign:"center", title:"Paris"}}/>
+                    <Stack.Screen name="CityTokyo" component={NotCityTokyo} options={{headerTitleAlign:"center", title:"Tokyo"}}/>
 
                     {/* AddLocation */}
                     <Stack.Screen name="PointParis" component={Paris} options={{headerTitleAlign:"center", title:"Paris"}}/>
+                    <Stack.Screen name="PointTokyo" component={Tokyo} options={{headerTitleAlign:"center", title:"Paris"}}/>
                 </Stack.Navigator>
             </NavigationContainer>
         </SafeAreaView>
