@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
-import estilo from "./style/style";
 
 export default props => {
     return (

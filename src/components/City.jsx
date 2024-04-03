@@ -3,12 +3,8 @@ import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import estilo from "./style/style";
 
 export default props => {
-    const [city, SetCity] = useState('');
-    const [Country, SetCountry] = useState('');
-
     return (
         <View style={estilo.Views}>
-
             <Pressable style={style.ButtonAdd} onPress={()=> props.navigation.navigate('CityParis')}>
                 <Text style={style.ButtonTextPrimary}>Paris</Text>
                 <Text style={style.ButtonTextSecondary}>France</Text>
@@ -41,7 +37,6 @@ export default props => {
                 <Text style={style.ButtonTextPrimary}>São Paulo</Text>
                 <Text style={style.ButtonTextSecondary}>Brazil</Text>
             </Pressable>
-
         </View>
     )
 }

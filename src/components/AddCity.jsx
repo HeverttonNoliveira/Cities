@@ -10,20 +10,20 @@ export default props => {
         <View style={estilo.Views}>
             <Text style={style.Title}>Cities</Text>
             <TextInput
-            style={style.inputStyle}
+                style={style.inputStyle}
                 onChangeText={"onChangeText"}
                 value={Country}
                 placeholder="France"
                 keyboardType="default"
             />
             <TextInput
-            style={style.inputStyle}
+                style={style.inputStyle}
                 onChangeText={"onChangeText"}
                 value={city}
                 placeholder="Paris"
                 keyboardType="default"
             />
-            <Pressable style={style.ButtonAdd} onPress={()=> props.navigation.navigate('City')}>
+            <Pressable style={style.ButtonAdd} onPress={() => props.navigation.navigate('City')}>
                 <Text style={style.ButtonText}>Add City</Text>
             </Pressable>
         </View>
@@ -44,23 +44,23 @@ const style = StyleSheet.create(
             marginTop: 8,
             marginBottom: 4,
             padding: 14,
-            fontSize:16,
+            fontSize: 16,
             borderWidth: 1,
             borderColor: "#d9d9d9",
             borderRadius: 8
         },
 
-        ButtonAdd:{
+        ButtonAdd: {
             marginTop: 8,
             backgroundColor: "#3a86ff",
-            width:"100%",
-            textAlign:"center",
-            alignItems:"center",
+            width: "100%",
+            textAlign: "center",
+            alignItems: "center",
             padding: 16,
-            borderRadius:8
+            borderRadius: 8
         },
 
-        ButtonText:{
+        ButtonText: {
             fontSize: 16,
             color: "#fff"
         }

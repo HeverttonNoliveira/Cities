@@ -54,22 +54,6 @@ const style = StyleSheet.create(
             borderRadius: 8
         },
 
-        TextBorde: {
-            alignItems: "center",
-            width: "100%",
-            borderBottomWidth: 1,
-            borderColor: "#3a86ff"
-        },
-
-        FontText: {
-            marginBottom: 4,
-            fontSize: 18,
-        },
-
-        FontSecondColor: {
-            fontWeight: "bold",
-        },
-
         ButtonLocation: {
             marginTop: 8,
             backgroundColor: "#3a86ff",

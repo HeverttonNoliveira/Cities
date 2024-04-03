@@ -2,12 +2,13 @@ import React from "react";
 import { SafeAreaView, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
 import AddCity from "./components/AddCity";
 import City from "./components/City";
 import Paris from "./components/locationCity/Paris";
+import Tokyo from "./components/locationCity/Tokyo";
 import NotCityParid from "./components/addLocation/addCityParis";
 import NotCityTokyo from "./components/addLocation/addCityTokyo";
-import Tokyo from "./components/locationCity/Tokyo";
 
 const Stack = createNativeStackNavigator();
 

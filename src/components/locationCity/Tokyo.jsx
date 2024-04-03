@@ -8,20 +8,19 @@ export default props => {
     return (
         <View style={estilo.Views}>
 
-        <View style={{flexGrow: 1, width:"100%",backgroundColor: "#dfddfe"}}>
-
-            <View style={style.ListLocation}>
-                <SucessCity pointLocation={"Santuário Meiji"} region={"Tokyos"} />
-                <SucessCity pointLocation={"Torre de Tóquio"} region={"Tokyos"} />
-                <SucessCity pointLocation={"Shibuya Scramble Crossing"} region={"Tokyos"} />
-                <SucessCity pointLocation={"Tokyo One Piece Tower"} region={"Tokyos"} />
+            <View style={{ flexGrow: 1, width: "100%", backgroundColor: "#dfddfe" }}>
+                <View style={style.ListLocation}>
+                    <SucessCity pointLocation={"Santuário Meiji"} region={"Tokyos"} />
+                    <SucessCity pointLocation={"Torre de Tóquio"} region={"Tokyos"} />
+                    <SucessCity pointLocation={"Shibuya Scramble Crossing"} region={"Tokyos"} />
+                    <SucessCity pointLocation={"Tokyo One Piece Tower"} region={"Tokyos"} />
+                </View>
             </View>
-        </View>
 
-        <Pressable style={style.ButtonAdd} onPress={() => props.navigation.navigate('CityTokyo')}>
+            <Pressable style={style.ButtonAdd} onPress={() => props.navigation.navigate('CityTokyo')}>
                 <Text style={style.ButtonText}>to go back</Text>
-        </Pressable>
-
+            </Pressable>
+            
         </View>
     )
 }

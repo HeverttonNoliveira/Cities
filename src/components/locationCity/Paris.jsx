@@ -7,7 +7,6 @@ export default props => {
 
     return (
         <View style={estilo.Views}>
-
         <View style={{flexGrow: 1, width:"100%",backgroundColor: "#dfddfe"}}>
 
             <View style={style.ListLocation}>
@@ -21,7 +20,6 @@ export default props => {
         <Pressable style={style.ButtonAdd} onPress={() => props.navigation.navigate('CityParis')}>
                 <Text style={style.ButtonText}>to go back</Text>
         </Pressable>
-
         </View>
     )
 }
